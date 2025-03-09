@@ -49,6 +49,7 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
     private final GreenImageScan greenImageScan;
     private final WmSensitiveMapper wmSensitiveMapper;
 //    private final Tess4jClient tess4jClient;
+
     /**
      * 自媒体文章审核
      *

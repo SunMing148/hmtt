@@ -53,7 +53,7 @@ public class WmNewsTaskServiceImpl  implements WmNewsTaskService {
 
     }
 
-    @Scheduled(fixedRate = 5000)    //每5秒执行一次此方法
+    @Scheduled(fixedRate = 10000)    //每10秒执行一次此方法
     @Override
 //    @SneakyThrows
     public void scanNewsByTask() {
