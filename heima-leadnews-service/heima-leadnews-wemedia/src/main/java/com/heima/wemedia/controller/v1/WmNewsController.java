@@ -36,9 +36,9 @@ public class WmNewsController {
 
 
     //文章上下架
-//    @PostMapping("/down_or_up")
-//    public ResponseResult downOrUp(@RequestBody WmNewsDto dto){
-//        return wmNewsService.downOrUp(dto);
-//    }
+    @PostMapping("/down_or_up")
+    public ResponseResult downOrUp(@RequestBody WmNewsDto dto){
+        return wmNewsService.downOrUp(dto);
+    }
 
 }
