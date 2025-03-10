@@ -15,9 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 @RequiredArgsConstructor
 public class WmMaterialController {
 
-//    @Autowired
-//    private WmMaterialService wmMaterialService;
-
     private final WmMaterialService wmMaterialService;
 
     //上传图片

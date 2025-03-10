@@ -15,9 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class LoginController {
 
-//    @Autowired
-//    private WmUserService wmUserService;
-
     private final WmUserService wmUserService;
 
     @PostMapping("/in")

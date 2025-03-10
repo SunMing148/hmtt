@@ -6,6 +6,7 @@ import com.heima.model.article.dtos.ArticleHomeDto;
 import com.heima.model.article.pojos.ApArticle;
 import com.heima.model.common.dtos.ResponseResult;
 import org.springframework.web.bind.annotation.RequestBody;
+import com.heima.model.article.dtos.ArticleInfoDto;
 
 import java.io.IOException;
 
@@ -26,4 +27,10 @@ public interface ApArticleService extends IService<ApArticle> {
      */
     public ResponseResult saveArticle(ArticleDto dto);
 
+    /**
+     * 加载文章详情 数据回显
+     * @param dto
+     * @return
+     */
+    public ResponseResult loadArticleBehavior(ArticleInfoDto dto);
 }
