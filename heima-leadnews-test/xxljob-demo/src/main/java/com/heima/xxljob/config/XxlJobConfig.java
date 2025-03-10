@@ -1,4 +1,4 @@
-package com.heima.article.config;
+package com.heima.xxljob.config;
 
 import com.xxl.job.core.executor.impl.XxlJobSpringExecutor;
 import org.slf4j.Logger;

@@ -18,16 +18,20 @@ public class ArticleHomeController {
 
     private final ApArticleService apArticleService;
 
-    @PostMapping("/load")
+    //加载首页
+    @PostMapping("/load")  //只要是/load请求路径，就是加载首页，所以下面的true并非是写死
     public ResponseResult load(@RequestBody ArticleHomeDto dto) {
-        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE,dto);
+//        return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE,dto);
+        return apArticleService.load2(dto, ArticleConstants.LOADTYPE_LOAD_MORE,true);
     }
 
+    //加载更多 对应app上拉
     @PostMapping("/loadmore")
     public ResponseResult loadMore(@RequestBody ArticleHomeDto dto) {
         return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_MORE,dto);
     }
 
+    //加载新的 对应app下拉
     @PostMapping("/loadnew")
     public ResponseResult loadNew(@RequestBody ArticleHomeDto dto) {
         return apArticleService.load(ArticleConstants.LOADTYPE_LOAD_NEW,dto);
