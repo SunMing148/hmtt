@@ -17,9 +17,9 @@
         <module name="heima-leadnews-feign-api" />
         <module name="heima-leadnews-user" />
         <module name="heima-leadnews-article" />
-        <module name="kafka-demo" />
         <module name="heima-leadnews-admin-gateway" />
         <module name="heima-leadnews-admin" />
+        <module name="kafka-demo" />
         <module name="xxljob-demo" />
         <module name="es-init" />
         <module name="heima-leadnews-schedule" />
